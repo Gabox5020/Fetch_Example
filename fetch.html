@@ -24,6 +24,8 @@
                 spanNombrePost.innerText = json.title;
 
                 let spanCompleto = document.getElementById("txtCompleto");
+
+                // spanCompleto.innerText = json.completed ? "Esta Incompleto" : "Esta incompleto";
                 
                 if(json.completed) {
                     spanCompleto.innerText = "Esta Completo";
