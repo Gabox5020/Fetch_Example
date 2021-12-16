@@ -22,7 +22,15 @@
             function jsonCargado(json) {
                 let spanNombrePost = document.getElementById("txtNombrePost");
                 spanNombrePost.innerText = json.title;
+
+                let spanCompleto = document.getElementById("txtCompleto");
                 
+                if(json.completed) {
+                    spanCompleto.innerText = "Esta Completo";
+                } else {
+                    spanCompleto.innerText = "Esta Incompleto";
+                }
+
                 console.log(json);
             }
 
