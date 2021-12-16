@@ -8,6 +8,9 @@
 </head>
     <body>
 
+        <b>Nombre del Post: </b> <span id="txtNombrePost"></span> <br/>
+        <b>¿Esta Completo?</b> <span id="txtCompleto"></span>
+
         <script>
 
             function cargarJson() {
@@ -17,6 +20,9 @@
             }
 
             function jsonCargado(json) {
+                let spanNombrePost = document.getElementById("txtNombrePost");
+                spanNombrePost.innerText = json.title;
+                
                 console.log(json);
             }
 
