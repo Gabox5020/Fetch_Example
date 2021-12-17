@@ -14,9 +14,23 @@
         <script>
 
             function cargarJson() {
-                fetch('https://jsonplaceholder.typicode.com/todos/1')
-            .then(response => response.json())
-            .then(jsonCargado);
+            //     fetch('https://jsonplaceholder.typicode.com/todos/1')
+            // .then(response => response.json())
+            // .then(jsonCargado);
+
+            let promesa = new Promise(resolver => {
+                let json = {
+              "userId": 1,
+              "id": 1,
+              "title": "delectus aut autem",
+              "completed": false
+              }
+              resolver(json);
+            });
+
+            promesa.then(json => {
+                jsonCargado(json);
+            })
             }
 
             function jsonCargado(json) {
