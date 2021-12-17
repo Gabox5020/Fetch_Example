@@ -19,13 +19,16 @@
             // .then(jsonCargado);
 
             let promesa = new Promise(resolver => {
-                let json = {
+                setTimeout(() => {
+                    let json = {
               "userId": 1,
               "id": 1,
               "title": "delectus aut autem",
               "completed": false
               }
-              resolver(json);
+              resolver(json);   
+            }, 5000);
+               
             });
 
             promesa.then(json => {
