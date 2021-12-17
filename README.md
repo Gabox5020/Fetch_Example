@@ -4,4 +4,4 @@
 
 ### Description
 ---
-- `I have created an example on how to use the Fetch`
+- `I have created an example on how to use the Fetch and Promises`
