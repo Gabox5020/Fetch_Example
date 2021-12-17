@@ -38,8 +38,9 @@
             // })
             // jsonCargado(json);
 
-            let resultado = await fetch('https://jsonplaceholder.typicode.com/todos/1')
-            alert(resultado)
+            let respuesta = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+            let json = await respuesta.json();
+            jsonCargado(json);
             }
 
             function jsonCargado(json) {
